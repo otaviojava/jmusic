@@ -25,6 +25,19 @@ package com.otaviojava.jmusic;
 public abstract class Note implements Comparable<Note> {
 
     /**
+     * The weight of the representation of the 12 musical notes.
+     * Starting with 1 and going to 12.
+     */
+    private final int weight;
+
+    protected Note(int weight) {
+        if (weight < 1 || weight > 12) {
+            throw new IllegalArgumentException("The weight interval must be between 1 and 12 values.");
+        }
+        this.weight = weight;
+    }
+
+    /**
      * Letter names are modified by the accidentals. The sharp sign ♯ raises a note by a semitone or half-step,
      * and a flat ♭ lowers it by the same amount. In modern tuning a half step has a frequency ratio of 12√2,
      * approximately 1.0595. The accidentals are written after the note name:
@@ -42,6 +55,7 @@ public abstract class Note implements Comparable<Note> {
      * Thus, the enharmonic spelling of a written note, interval, or chord is an alternative way to write that note,
      * interval, or chord. The term is derived from Latin enharmonicus, from Late Latin enarmonius,
      * from Ancient Greek ἐναρμόνιος (enarmónios), from ἐν (en)+ἁρμονία (harmonía).
+     *
      * @param note
      * @return
      */
