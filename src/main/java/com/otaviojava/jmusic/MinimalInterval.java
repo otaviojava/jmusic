@@ -49,8 +49,9 @@ final class MinimalInterval implements Interval {
 
     @Override
     public String toString() {
-        return "Semitone{" +
+        return "MinimalInterval{" +
                 "weight=" + weight +
+                ", symbol='" + symbol + '\'' +
                 '}';
     }
 
