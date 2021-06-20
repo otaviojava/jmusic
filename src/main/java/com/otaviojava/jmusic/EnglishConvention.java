@@ -1,2 +1,45 @@
-package com.otaviojava.jmusic;public class EnglishConvention {
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+package com.otaviojava.jmusic;
+
+public enum EnglishConvention implements Note {
+    C(1), D(3), E(5), F(6), G(8), A(10), B(12);
+
+    private final Note note;
+
+    EnglishConvention(int weight) {
+        this.note = new DefaultNote(weight);
+    }
+
+    @Override
+    public int getWeight() {
+        return this.note.getWeight();
+    }
+
+    @Override
+    public boolean isAccidental() {
+        return this.note.isAccidental();
+    }
+
+    @Override
+    public boolean isEnharmonic(Note note) {
+        return this.note.isEnharmonic(note);
+    }
 }
