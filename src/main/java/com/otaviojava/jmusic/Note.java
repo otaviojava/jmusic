@@ -22,7 +22,7 @@ package com.otaviojava.jmusic;
 /**
  * In music, a note is a symbol denoting a musical sound. In English usage a note is also the sound itself.
  */
-public interface Note extends Comparable<Note> {
+public abstract class Note implements Comparable<Note> {
 
     /**
      * Letter names are modified by the accidentals. The sharp sign ♯ raises a note by a semitone or half-step,
@@ -34,7 +34,7 @@ public interface Note extends Comparable<Note> {
      *
      * @return <b>true</b> if the note is accidental
      */
-    boolean isAccidental();
+    public abstract boolean isAccidental();
 
     /**
      * In modern musical notation and tuning, an enharmonic equivalent is a note, interval, or key signature
@@ -45,5 +45,5 @@ public interface Note extends Comparable<Note> {
      * @param note
      * @return
      */
-    boolean isEnharmonic(Note note);
+    public abstract boolean isEnharmonic(Note note);
 }
