@@ -28,5 +28,5 @@ package com.otaviojava.jmusic;
  * Diminished, minor and augmented seconds are notated on adjacent staff positions as well,
  * but consist of a different number of semitones (zero, one, and three).
  */
-public class WholeTone implements Interval {
+public class Tone implements Interval {
 }
