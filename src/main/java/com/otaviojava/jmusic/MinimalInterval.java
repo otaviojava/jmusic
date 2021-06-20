@@ -25,11 +25,11 @@ package com.otaviojava.jmusic;
  * It is defined as the interval between two adjacent notes in a 12-tone scale. For example,
  * C is adjacent to C♯; the interval between them is a semitone.
  */
-public final class Semitone implements Interval {
+final class MinimalInterval implements Interval {
 
     private final int weight;
 
-    public Semitone(int weight) {
+    public MinimalInterval(int weight) {
         this.weight = weight;
     }
 

@@ -35,14 +35,14 @@ public interface Interval {
      * For instance, the music below has a key signature with three sharps
      * (indicating either A major or F♯ minor, the relative minor) and the note, A♯, has a sharp accidental.
      */
-    Interval SHARP = new Semitone(1);
+    Interval SHARP = new MinimalInterval(1);
     /**
      * Double sharps are indicated by the symbol double sharp and raise a note by two semitones,
      * or one whole tone. They should not be confused with a ghost note. Historically,
      * in order to lower a double sharp by one semitone to a sharp, it would be denoted as a ♮♯.
      * In modern notation the natural sign is often omitted.
      */
-    Interval DOUBLE_SHARP = new Semitone(2);
+    Interval DOUBLE_SHARP = new MinimalInterval(2);
     /**
      * In music, flat (Italian bemolle for "soft B") means "lower in pitch".
      * Flat is the opposite of sharp, which is a raising of pitch. In musical notation, flat means
@@ -50,7 +50,7 @@ public interface Interval {
      * stylised lowercase 'b'. For instance, the music below has a key signature with three flats
      * (indicating either E♭ major or C minor) and the note, D♭, has a flat accidental.
      */
-    Interval FLAT = new Semitone(-1);
+    Interval FLAT = new MinimalInterval(-1);
     /**
      * Double flats also exist, which look like double flat (similar to two flats, ♭♭) and lower a note by
      * two semitones, or a whole step. The Unicode character 𝄫 (U+1D12B)
@@ -58,14 +58,14 @@ public interface Interval {
      * raise a double flat to a simple flat, it was required to use the notation ♮♭.
      * In modern scores it is acceptable to simply denote this with a single flat ♭.
      */
-    Interval DOUBLE_FLAT = new Semitone(-2);
+    Interval DOUBLE_FLAT = new MinimalInterval(-2);
     /**
      * A semitone, also called a half step or a half tone,[3] is the smallest musical interval commonly used
      * in Western tonal music, and it is considered the most dissonant[5] when sounded harmonically.
      * It is defined as the interval between two adjacent notes in a 12-tone scale. For example,
      * C is adjacent to C♯; the interval between them is a semitone.
      */
-    Interval SEMITONE = new Semitone(1);
+    Interval SEMITONE = new MinimalInterval(1);
     /**
      * In Western music theory, a major second (sometimes also called whole tone or a whole step) is a second spanning
      * two semitones. A second is a musical interval encompassing two adjacent staff
@@ -75,7 +75,7 @@ public interface Interval {
      * Diminished, minor and augmented seconds are notated on adjacent staff positions as well,
      * but consist of a different number of semitones (zero, one, and three).
      */
-    Interval TONE = new Semitone(2);
+    Interval TONE = new MinimalInterval(2);
 
 
 }
