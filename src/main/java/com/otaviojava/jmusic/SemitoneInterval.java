@@ -27,18 +27,18 @@ import java.util.Optional;
  * It is defined as the interval between two adjacent notes in a 12-tone scale. For example,
  * C is adjacent to C♯; the interval between them is a semitone.
  */
-final class MinimalInterval implements Interval {
+final class SemitoneInterval implements Interval {
 
     private final int weight;
 
     private final String symbol;
 
-    public MinimalInterval(int weight) {
+    public SemitoneInterval(int weight) {
         this.weight = weight;
         this.symbol = null;
     }
 
-    public MinimalInterval(int weight, String symbol) {
+    public SemitoneInterval(int weight, String symbol) {
         this.weight = weight;
         this.symbol = symbol;
     }
