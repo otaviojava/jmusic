@@ -23,4 +23,13 @@ package com.otaviojava.jmusic;
  * In music, a note is a symbol denoting a musical sound. In English usage a note is also the sound itself.
  */
 public interface Note {
+
+    /**
+     * Letter names are modified by the accidentals. The sharp sign ♯ raises a note by a semitone or half-step,
+     * and a flat ♭ lowers it by the same amount. In modern tuning a half step has a frequency ratio of 12√2,
+     * approximately 1.0595. The accidentals are written after the note name:
+     * so, for example, F♯ represents F-sharp, B♭ is B-flat, and C♮ is C natural (or C).
+     * @return <b>true</b> if the note is accidental
+     */
+    boolean isAccidental();
 }
