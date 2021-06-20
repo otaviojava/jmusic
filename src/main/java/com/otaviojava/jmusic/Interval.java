@@ -20,7 +20,7 @@
 package com.otaviojava.jmusic;
 
 /**
- * In music theory, an interval is a difference in pitch between two sounds.[1] An interval may be described
+ * In music theory, an interval is a difference in pitch between two sounds. An interval may be described
  * as horizontal, linear, or melodic if it refers to successively sounding tones, such as two adjacent pitches
  * in a melody, and vertical or harmonic if it pertains to simultaneously sounding tones, such as in a chord.
  */
