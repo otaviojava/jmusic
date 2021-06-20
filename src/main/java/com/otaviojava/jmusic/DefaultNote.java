@@ -47,9 +47,4 @@ class DefaultNote implements Note {
         Objects.requireNonNull(note, "note is required");
         return this.getWeight() == note.getWeight();
     }
-
-    @Override
-    public int compareTo(Note note) {
-        return Integer.compare(this.getWeight(), note.getWeight());
-    }
 }
