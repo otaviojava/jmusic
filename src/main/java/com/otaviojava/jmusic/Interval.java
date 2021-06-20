@@ -30,12 +30,19 @@ public interface Interval {
      * In music, sharp, dièse (from French), or diesis (from Greek)[a] means higher in pitch.
      * More specifically, in musical notation, sharp means "higher in pitch by one semitone (half step)".
      * Sharp is the opposite of flat, which is a lowering of pitch.
-     *
+     * <p>
      * A sharp symbol, ♯, is used in key signatures or as an accidental.
      * For instance, the music below has a key signature with three sharps
      * (indicating either A major or F♯ minor, the relative minor) and the note, A♯, has a sharp accidental.
      */
     Interval SHARP = new Semitone(1);
+    /**
+     * Double sharps are indicated by the symbol double sharp and raise a note by two semitones,
+     * or one whole tone. They should not be confused with a ghost note. Historically,
+     * in order to lower a double sharp by one semitone to a sharp, it would be denoted as a ♮♯.
+     * In modern notation the natural sign is often omitted.
+     */
+    Interval DOUBLE_SHARP = new Semitone(2);
     /**
      * In music, flat (Italian bemolle for "soft B") means "lower in pitch".
      * Flat is the opposite of sharp, which is a raising of pitch. In musical notation, flat means
@@ -44,6 +51,14 @@ public interface Interval {
      * (indicating either E♭ major or C minor) and the note, D♭, has a flat accidental.
      */
     Interval FLAT = new Semitone(-1);
+    /**
+     * Double flats also exist, which look like double flat (similar to two flats, ♭♭) and lower a note by
+     * two semitones, or a whole step. The Unicode character 𝄫 (U+1D12B)
+     * in the Musical Symbols block represents the double-flat sign. Historically, in order to
+     * raise a double flat to a simple flat, it was required to use the notation ♮♭.
+     * In modern scores it is acceptable to simply denote this with a single flat ♭.
+     */
+    Interval DOUBLE_FLAT = new Semitone(-1);
     Interval SEMITONE = new Semitone(1);
     Interval TONE = new Semitone(2);
 
