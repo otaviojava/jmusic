@@ -37,6 +37,10 @@ public abstract class Note implements Comparable<Note> {
         this.weight = weight;
     }
 
+    protected int getWeight() {
+        return weight;
+    }
+
     /**
      * Letter names are modified by the accidentals. The sharp sign ♯ raises a note by a semitone or half-step,
      * and a flat ♭ lowers it by the same amount. In modern tuning a half step has a frequency ratio of 12√2,
