@@ -24,6 +24,9 @@ package com.otaviojava.jmusic;
  */
 public interface Note extends Comparable<Note> {
 
+    /**
+     * @return a modular arithmetic in 12, similar to the 12-hour clock.
+     */
     int getWeight();
 
     /**
