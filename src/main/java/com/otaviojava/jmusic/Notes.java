@@ -19,16 +19,30 @@
 
 package com.otaviojava.jmusic;
 
+import java.util.function.Supplier;
+
 /**
  * An utilitarian class to {@link Note}
  */
 public class Notes {
 
-    public enum EnglishConvention {
-        C, D, E, F, G, A, B;
+    public static class EnglishConvention {
+        public static final Note C = new AbstractNote(1);
+        public static final Note D = new AbstractNote(2);
+        public static final Note E = new AbstractNote(3);
+        public static final Note F = new AbstractNote(4);
+        public static final Note G = new AbstractNote(5);
+        public static final Note A = new AbstractNote(6);
+        public static final Note B = new AbstractNote(7);
     }
 
-    public enum NeoLatinConvention {
-        DO, RE, MI, FA, SOL, LA, SI
+    public static class NeoLatinConvention {
+        public static final Note DO = new AbstractNote(1);
+        public static final Note RE = new AbstractNote(2);
+        public static final Note MI = new AbstractNote(3);
+        public static final Note FA = new AbstractNote(4);
+        public static final Note SOL = new AbstractNote(5);
+        public static final Note LA = new AbstractNote(6);
+        public static final Note SI = new AbstractNote(7);
     }
 }
