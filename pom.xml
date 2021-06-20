@@ -241,20 +241,6 @@
                     </includes>
                     <excludes>
                     </excludes>
-                    <licenses>
-                        <license implementation="org.apache.rat.analysis.license.SimplePatternBasedLicense">
-                            <licenseFamilyCategory>EPL-2.0</licenseFamilyCategory>
-                            <licenseFamilyName>Eclipse Public License 2.0</licenseFamilyName>
-                            <patterns>
-                                <pattern>Eclipse Public License v. 2.0</pattern>
-                            </patterns>
-                        </license>
-                    </licenses>
-                    <licenseFamilies>
-                        <licenseFamily implementation="org.apache.rat.license.SimpleLicenseFamily">
-                            <familyName>Eclipse Public License 2.0</familyName>
-                        </licenseFamily>
-                    </licenseFamilies>
                 </configuration>
                 <executions>
                     <execution>
