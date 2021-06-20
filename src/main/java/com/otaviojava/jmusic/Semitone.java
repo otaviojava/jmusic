@@ -27,4 +27,20 @@ package com.otaviojava.jmusic;
  */
 public final class Semitone implements Interval {
 
+    private final int weight;
+
+    public Semitone(int weight) {
+        this.weight = weight;
+    }
+
+    int getWeight() {
+        return weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Semitone{" +
+                "weight=" + weight +
+                '}';
+    }
 }
