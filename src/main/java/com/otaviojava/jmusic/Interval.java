@@ -19,6 +19,8 @@
 
 package com.otaviojava.jmusic;
 
+import java.util.Optional;
+
 /**
  * In music theory, an interval is a difference in pitch between two sounds. An interval may be described
  * as horizontal, linear, or melodic if it refers to successively sounding tones, such as two adjacent pitches
@@ -77,5 +79,6 @@ public interface Interval {
      */
     Interval TONE = new MinimalInterval(2);
 
+    Optional<String> getSymbol();
 
 }

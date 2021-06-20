@@ -19,6 +19,8 @@
 
 package com.otaviojava.jmusic;
 
+import java.util.Optional;
+
 /**
  * A semitone, also called a half step or a half tone,[3] is the smallest musical interval commonly used
  * in Western tonal music, and it is considered the most dissonant[5] when sounded harmonically.
@@ -29,8 +31,16 @@ final class MinimalInterval implements Interval {
 
     private final int weight;
 
+    private final String symbol;
+
     public MinimalInterval(int weight) {
         this.weight = weight;
+        this.symbol = null;
+    }
+
+    public MinimalInterval(int weight, String symbol) {
+        this.weight = weight;
+        this.symbol = symbol;
     }
 
     int getWeight() {
@@ -42,5 +52,10 @@ final class MinimalInterval implements Interval {
         return "Semitone{" +
                 "weight=" + weight +
                 '}';
+    }
+
+    @Override
+    public Optional<String> getSymbol() {
+        return Optional.ofNullable(symbol);
     }
 }
