@@ -29,7 +29,21 @@ public interface Note {
      * and a flat ♭ lowers it by the same amount. In modern tuning a half step has a frequency ratio of 12√2,
      * approximately 1.0595. The accidentals are written after the note name:
      * so, for example, F♯ represents F-sharp, B♭ is B-flat, and C♮ is C natural (or C).
+     * Additional accidentals are the double-sharp double sharp, raising the frequency by two semitones,
+     * and double-flat double flat, lowering it by that amount.
+     *
      * @return <b>true</b> if the note is accidental
      */
     boolean isAccidental();
+
+    /**
+     * In modern musical notation and tuning, an enharmonic equivalent is a note, interval, or key signature
+     * that is equivalent to some other note, interval, or key signature but "spelled", or named differently.
+     * Thus, the enharmonic spelling of a written note, interval, or chord is an alternative way to write that note,
+     * interval, or chord. The term is derived from Latin enharmonicus, from Late Latin enarmonius,
+     * from Ancient Greek ἐναρμόνιος (enarmónios), from ἐν (en)+ἁρμονία (harmonía).
+     * @param note
+     * @return
+     */
+    boolean isEnharmonic(Note note);
 }
