@@ -48,6 +48,11 @@ final class MinimalInterval implements Interval {
     }
 
     @Override
+    public Optional<String> getSymbol() {
+        return Optional.ofNullable(symbol);
+    }
+
+    @Override
     public String toString() {
         return "MinimalInterval{" +
                 "weight=" + weight +
@@ -55,8 +60,4 @@ final class MinimalInterval implements Interval {
                 '}';
     }
 
-    @Override
-    public Optional<String> getSymbol() {
-        return Optional.ofNullable(symbol);
-    }
 }
