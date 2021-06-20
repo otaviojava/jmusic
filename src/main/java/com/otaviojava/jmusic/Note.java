@@ -22,7 +22,7 @@ package com.otaviojava.jmusic;
 /**
  * In music, a note is a symbol denoting a musical sound. In English usage a note is also the sound itself.
  */
-public interface Note {
+public interface Note extends Comparable<Note> {
 
     /**
      * Letter names are modified by the accidentals. The sharp sign ♯ raises a note by a semitone or half-step,
