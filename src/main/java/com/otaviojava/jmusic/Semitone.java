@@ -25,5 +25,5 @@ package com.otaviojava.jmusic;
  * It is defined as the interval between two adjacent notes in a 12-tone scale. For example,
  * C is adjacent to C♯; the interval between them is a semitone.
  */
-public interface Semitone extends Interval {
+public final class Semitone implements Interval {
 }
