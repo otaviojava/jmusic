@@ -25,4 +25,6 @@ package com.otaviojava.jmusic;
  * in a melody, and vertical or harmonic if it pertains to simultaneously sounding tones, such as in a chord.
  */
 public interface Interval {
+
+
 }
