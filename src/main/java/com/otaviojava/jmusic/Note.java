@@ -22,24 +22,9 @@ package com.otaviojava.jmusic;
 /**
  * In music, a note is a symbol denoting a musical sound. In English usage a note is also the sound itself.
  */
-public abstract class Note implements Comparable<Note> {
+public interface Note extends Comparable<Note> {
 
-    /**
-     * The weight of the representation of the 12 musical notes.
-     * Starting with 1 and going to 12.
-     */
-    private final int weight;
-
-    protected Note(int weight) {
-        if (weight < 1 || weight > 12) {
-            throw new IllegalArgumentException("The weight interval must be between 1 and 12 values.");
-        }
-        this.weight = weight;
-    }
-
-    protected int getWeight() {
-        return weight;
-    }
+    int getWeight();
 
     /**
      * Letter names are modified by the accidentals. The sharp sign ♯ raises a note by a semitone or half-step,
@@ -51,7 +36,7 @@ public abstract class Note implements Comparable<Note> {
      *
      * @return <b>true</b> if the note is accidental
      */
-    public abstract boolean isAccidental();
+    boolean isAccidental();
 
     /**
      * In modern musical notation and tuning, an enharmonic equivalent is a note, interval, or key signature
@@ -60,8 +45,8 @@ public abstract class Note implements Comparable<Note> {
      * interval, or chord. The term is derived from Latin enharmonicus, from Late Latin enarmonius,
      * from Ancient Greek ἐναρμόνιος (enarmónios), from ἐν (en)+ἁρμονία (harmonía).
      *
-     * @param note
-     * @return
+     * @param note the note to compare
+     * @return <b>true</b> if it is enharmonic
      */
-    public abstract boolean isEnharmonic(Note note);
+    boolean isEnharmonic(Note note);
 }
