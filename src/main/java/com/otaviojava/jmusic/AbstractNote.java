@@ -24,10 +24,17 @@ import java.util.Objects;
 /**
  * A template method class to implement notes
  */
-class AbstractNote extends Note {
+class AbstractNote implements Note {
+
+    private final int weight;
 
     protected AbstractNote(int weight) {
-        super(weight);
+        this.weight = weight;
+    }
+
+    @Override
+    public int getWeight() {
+        return weight;
     }
 
     @Override

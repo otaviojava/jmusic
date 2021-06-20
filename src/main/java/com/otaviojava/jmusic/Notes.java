@@ -26,7 +26,7 @@ import java.util.function.Supplier;
  */
 public class Notes {
 
-    public static class EnglishConvention extends com.otaviojava.jmusic.EnglishConvention {
+    public static class EnglishConvention {
         public static final Note C = new AbstractNote(1);
         public static final Note D = new AbstractNote(3);
         public static final Note E = new AbstractNote(5);
