@@ -21,8 +21,8 @@ package com.otaviojava.jmusic;
 
 /**
  * In Western music theory, a major second (sometimes also called whole tone or a whole step) is a second spanning
- * two semitones (About this soundPlay (help·info)). A second is a musical interval encompassing two adjacent staff
- * positions (see Interval number for more details). For example, the interval from C to D is a major second,
+ * two semitones. A second is a musical interval encompassing two adjacent staff
+ * positions. For example, the interval from C to D is a major second,
  * as the note D lies two semitones above C, and the two notes are notated on adjacent staff positions.
  * <p>
  * Diminished, minor and augmented seconds are notated on adjacent staff positions as well,
