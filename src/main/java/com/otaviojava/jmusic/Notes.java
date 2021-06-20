@@ -28,21 +28,21 @@ public class Notes {
 
     public static class EnglishConvention {
         public static final Note C = new AbstractNote(1);
-        public static final Note D = new AbstractNote(2);
-        public static final Note E = new AbstractNote(3);
-        public static final Note F = new AbstractNote(4);
-        public static final Note G = new AbstractNote(5);
-        public static final Note A = new AbstractNote(6);
-        public static final Note B = new AbstractNote(7);
+        public static final Note D = new AbstractNote(3);
+        public static final Note E = new AbstractNote(5);
+        public static final Note F = new AbstractNote(6);
+        public static final Note G = new AbstractNote(8);
+        public static final Note A = new AbstractNote(10);
+        public static final Note B = new AbstractNote(12);
     }
 
     public static class NeoLatinConvention {
         public static final Note DO = new AbstractNote(1);
-        public static final Note RE = new AbstractNote(2);
-        public static final Note MI = new AbstractNote(3);
-        public static final Note FA = new AbstractNote(4);
-        public static final Note SOL = new AbstractNote(5);
-        public static final Note LA = new AbstractNote(6);
-        public static final Note SI = new AbstractNote(7);
+        public static final Note RE = new AbstractNote(3);
+        public static final Note MI = new AbstractNote(5);
+        public static final Note FA = new AbstractNote(6);
+        public static final Note SOL = new AbstractNote(8);
+        public static final Note LA = new AbstractNote(10);
+        public static final Note SI = new AbstractNote(12);
     }
 }
