@@ -58,8 +58,23 @@ public interface Interval {
      * raise a double flat to a simple flat, it was required to use the notation ♮♭.
      * In modern scores it is acceptable to simply denote this with a single flat ♭.
      */
-    Interval DOUBLE_FLAT = new Semitone(-1);
+    Interval DOUBLE_FLAT = new Semitone(-2);
+    /**
+     * A semitone, also called a half step or a half tone,[3] is the smallest musical interval commonly used
+     * in Western tonal music, and it is considered the most dissonant[5] when sounded harmonically.
+     * It is defined as the interval between two adjacent notes in a 12-tone scale. For example,
+     * C is adjacent to C♯; the interval between them is a semitone.
+     */
     Interval SEMITONE = new Semitone(1);
+    /**
+     * In Western music theory, a major second (sometimes also called whole tone or a whole step) is a second spanning
+     * two semitones. A second is a musical interval encompassing two adjacent staff
+     * positions. For example, the interval from C to D is a major second,
+     * as the note D lies two semitones above C, and the two notes are notated on adjacent staff positions.
+     * <p>
+     * Diminished, minor and augmented seconds are notated on adjacent staff positions as well,
+     * but consist of a different number of semitones (zero, one, and three).
+     */
     Interval TONE = new Semitone(2);
 
 
