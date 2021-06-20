@@ -22,7 +22,7 @@ package com.otaviojava.jmusic;
 /**
  * In music, a note is a symbol denoting a musical sound. In English usage a note is also the sound itself.
  */
-public interface Note extends Comparable<Note> {
+public interface Note  {
 
     /**
      * @return a modular arithmetic in 12, similar to the 12-hour clock.
